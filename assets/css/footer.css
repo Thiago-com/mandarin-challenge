@@ -1,0 +1,17 @@
+footer img{
+    cursor: pointer;
+    width: 100%;
+}
+
+footer p {
+    color: var(--dark-gray);
+    padding-bottom: 1.5rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    footer img {
+        width: 100%;
+    }
+}

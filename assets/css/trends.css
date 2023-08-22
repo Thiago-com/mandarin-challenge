@@ -1,0 +1,128 @@
+main {
+    margin: 0 auto;
+    max-width: max-content;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.main-trends-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5em;
+    z-index: 1;
+    width: 71%;
+}
+
+.trend-image {
+    width: 100%;
+}
+
+.other-trends-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 1.5em;
+}
+
+.trends-content {
+    flex-direction: column;
+    justify-content: center;
+    width: min-content;
+}
+
+.trends-content img {
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    width: min-content;
+}
+
+.line {
+    height: 4px;
+    width: 50%;
+}
+
+.nba-line-color {
+    background-image: linear-gradient(90deg, #76c7cf 0%, #675fa6 100%);
+    height: 4px;
+    width: 50%;
+}
+
+.whatsapp-line-color {
+    background-image: linear-gradient(90deg, #75c7cf 0%, #38b388 100%);
+    height: 4px;
+    width: 50%;
+}
+
+
+.main-trends-content,
+.trends-content {
+    cursor: pointer;
+}
+
+.main-trends-content h2 {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.trend-info {
+    color: var(--dark-gray);
+    padding-top: 7px;
+}
+
+.trend-detail{
+    color: var(--light-gray);
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.trends-content h2 {
+    font-weight: bold;
+    padding-bottom: 18px;
+    padding-top: 12px;
+}
+
+.p-detail {
+    color: var(--light-gray);
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .main-trends-wrapper {
+        height: 25rem;
+        width: 100%;
+    }
+
+    .trend-image {
+        
+    }
+
+    .other-trends-wrapper  {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .main-trends-content h2 {
+        font-size: 1.5rem;
+    }
+
+    
+}
+
+@media (max-width: 1024px) {
+    .other-trends-wrapper {
+        flex-wrap: wrap;
+    }
+
+
+    
+}
+@media (max-width: 1280px) {
+    .other-trends-wrapper {
+        justify-content: center;
+    }
+}

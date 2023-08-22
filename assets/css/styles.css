@@ -1,0 +1,47 @@
+@import url("header.css");
+@import url("trends.css");
+@import url("footer.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-color: #EBECEE;
+    --black: #000000;
+    --font: "Roboto";
+    --gray: #474646;
+    --dark-gray: #44474a;
+    --light-gray: #898b8c;
+    --white: #FFFFFF;
+}
+
+body {
+    background-color: var(--background-color);
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: var(--white);
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+@media (max-width: 768px)  {
+    .container {
+        width: 80%;
+    }
+}
+
+/* @media (max-width: 1024px)  {
+    .container {
+        width: 70%;
+    }
+} */
